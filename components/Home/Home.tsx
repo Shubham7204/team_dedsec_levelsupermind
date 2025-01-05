@@ -4,8 +4,6 @@ import Hero from "./Hero";
 import Image from "next/image";
 import Reviews from "./Reviews/Reviews";
 import WhatYouGet from "./WhatYouGet";
-import ExpertSupport from "./ExpertSupport";
-import YourBussniessInsights from "./YourBussniessInsights";
 import OurPartners from "./OurPartners";
 import Resources from "./Resources";
 import PricingPlans from "../PricingPlans/PricingPlans";
@@ -32,8 +30,6 @@ const Home = () => {
       </div>
       <Reviews />
       <WhatYouGet />
-      {/* <ExpertSupport />
-      <YourBussniessInsights /> */}
       <OurPartners />
       <Resources />
       <PricingPlans />
