@@ -1,8 +1,17 @@
 import React from "react";
+import Image from "next/image";
 import ComponentWrapper from "../Shared/ComponentWrapper";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-const developers = [
+interface Developer {
+  name: string;
+  college: string;
+  linkedin: string;
+  github: string;
+  image: string;
+}
+
+const developers: Developer[] = [
   {
     name: "Azlan Khawar",
     college: "DJSCE, Mumbai",
@@ -33,7 +42,12 @@ const developers = [
   },
 ];
 
-const MeetTheDevelopers = () => {
+interface ComponentWrapperProps {
+  style: string;
+  children: React.ReactNode;
+}
+
+const MeetTheDevelopers: React.FC = () => {
   return (
     <ComponentWrapper style="w-full lg:py-16 py-12 bg-white-main">
       <h2 className="font-poppins text-center text-black-secondary text-[44px] sm:text-[56px] font-semibold mb-12">
@@ -45,14 +59,20 @@ const MeetTheDevelopers = () => {
             key={index}
             className="border rounded-2xl p-6 shadow-lg bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col items-center transform transition-all duration-300 hover:scale-105"
           >
-            <img
-              src={dev.image}
-              alt={`${dev.name}'s photo`}
-              className="w-32 h-32 rounded-full mb-4 object-cover border-4 border-white shadow-md"
-            />
-            <h3 className="font-semibold text-xl mb-1">{dev.name}</h3>
+            <div className="relative w-32 h-32">
+              <Image
+                src={dev.image}
+                alt={`${dev.name}'s photo`}
+                fill
+                sizes="(max-width: 128px) 100vw, 128px"
+                className="rounded-full object-cover border-4 border-white shadow-md"
+                priority
+              />
+            </div>
+            <h3 className="font-semibold text-xl mb-1 mt-4">{dev.name}</h3>
             <p className="text-sm text-gray-600 mb-4">{dev.college}</p>
             <div className="flex gap-4">
+              
               <a
                 href={dev.linkedin}
                 target="_blank"
