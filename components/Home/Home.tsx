@@ -6,7 +6,6 @@ import Reviews from "./Reviews/Reviews";
 import WhatYouGet from "./WhatYouGet";
 import OurPartners from "./OurPartners";
 import Resources from "./Resources";
-import PricingPlans from "../PricingPlans/PricingPlans";
 import Faq from "./Faq";
 import Footer from "../Shared/Navigations/Footer";
 import MeetTheDevelopers from "./MeetTheDevelopers";
@@ -32,7 +31,6 @@ const Home = () => {
       <WhatYouGet />
       <OurPartners />
       <Resources />
-      <PricingPlans />
       <Faq />
       <MeetTheDevelopers />
       <Footer />
