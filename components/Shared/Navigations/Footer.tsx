@@ -11,7 +11,7 @@ const Footer = () => {
   const quickLinks = [
     { name: "Hackathon Details", link: "https://www.findcoder.io/hackathons/SuperMind-Hackathon/67668c927a79c23209528177" },
     { name: "Project GitHub", link: "https://github.com/your-repo-link" },
-    { name: "Project Demo", link: "https://www.youtube.com/your-demo-video" },
+    { name: "Project Demo", link: "https://www.youtube.com/watch?v=19YieWDN5Vo" },
   ];
   const socials = [
     { icon: <FaInstagram className="text-xl" />, link: "" },

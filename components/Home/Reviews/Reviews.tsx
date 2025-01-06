@@ -60,7 +60,7 @@ const Reviews = () => {
         <div className="w-full aspect-video lg:max-w-[1000px]">
           <iframe
             className="w-full h-full rounded-[30px]"
-            src="https://www.youtube.com/embed/y7XMDKwTQxY"
+            src="https://www.youtube.com/watch?v=19YieWDN5Vo"
             title="Hackathon Demo Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
