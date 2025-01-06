@@ -14,8 +14,7 @@ const Navbar = () => {
     { name: "Services", url: "#services" },
     { name: "Resources", url: "#resources" },
     { name: "Blog", url: "#blog" },
-    { name: "Chat", url: "/chat" },
-  ];
+    { name: "Chat", url: "https://socialflow.streamlit.app/", target: "_blank", rel: "noopener noreferrer" },  ];
   const toggleDrawer = () => setDrawerOpen(!drawerOpen);
 
   return (
