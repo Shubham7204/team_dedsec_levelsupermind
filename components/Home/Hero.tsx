@@ -33,7 +33,13 @@ const Hero = () => {
           DataStax Astra DB, and GPT-powered analytics.
         </p>
         <div className="w-full flex items-center justify-center gap-5">
-          <GetStartedBtnYellow text="Chat Now" />
+          <a
+            href="https://socialflow.streamlit.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GetStartedBtnYellow text="Chat Now" />
+          </a>
         </div>
       </div>
     </ComponentWrapper>
