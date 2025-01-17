@@ -2,6 +2,7 @@ import React from "react";
 import ComponentWrapper from "../Shared/ComponentWrapper";
 import Image from "next/image";
 import { GetStartedBtnYellow } from "./GetStartedBtn";
+import { SiStreamlit, SiNextdotjs } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -33,13 +34,16 @@ const Hero = () => {
           DataStax Astra DB, and GPT-powered analytics.
         </p>
         <div className="w-full flex items-center justify-center gap-5">
-          <a
+          <GetStartedBtnYellow 
+            text="Chat Now"
             href="https://socialflow.streamlit.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GetStartedBtnYellow text="Chat Now" />
-          </a>
+            icon={<SiStreamlit className="text-xl" />}
+          />
+          <GetStartedBtnYellow 
+            text="Chat Now"
+            href="https://team-dedsec-levelsupermind.vercel.app/chat"
+            icon={<SiNextdotjs className="text-xl" />}
+          />
         </div>
       </div>
     </ComponentWrapper>
