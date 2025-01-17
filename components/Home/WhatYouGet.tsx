@@ -44,7 +44,11 @@ const WhatYouGet = () => {
               optimize social media engagement effortlessly.
             </p>
           </div>
-          <GetStartedBtnYellow text="Learn More" />
+          <GetStartedBtnYellow 
+            text="Learn More" 
+            href="https://socialflow.streamlit.app/"
+            icon={<Icons.BookKeeping className="text-xl" />}
+          />
         </div>
         {/* Cards Here */}
         <div className="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-5">
