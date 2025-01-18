@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import ComponentWrapper from "../Shared/ComponentWrapper";
 
@@ -17,9 +18,13 @@ const Faq = () => {
             <input
               type="radio"
               name="my-accordion-3"
-              defaultChecked
               className="peer"
+              aria-label="FAQ accordion item"
+              id={`faq-0`}
             />
+            <label htmlFor={`faq-0`} className="sr-only">
+              FAQ accordion control
+            </label>
             <div className="collapse-title text-xl sm:text-2xl font-semibold text-black-main peer-checked:text-brand-main">
               What is Langflow, and how is it used in this project?
             </div>
@@ -35,7 +40,16 @@ const Faq = () => {
 
           {/* Accordion Item */}
           <div className="collapse collapse-plus border border-black-main rounded-[30px] font-poppins sm:p-8 p-4 bg-white-main has-[:checked]:bg-brand-light has-[:checked]:border-brand-main">
-            <input type="radio" name="my-accordion-3" className="peer" />
+            <input
+              type="radio"
+              name="my-accordion-3"
+              className="peer"
+              aria-label="FAQ accordion item"
+              id={`faq-1`}
+            />
+            <label htmlFor={`faq-1`} className="sr-only">
+              FAQ accordion control
+            </label>
             <div className="collapse-title text-xl sm:text-2xl font-semibold text-black-main peer-checked:text-brand-main">
               How does DataStax Astra DB support this project?
             </div>
@@ -51,7 +65,16 @@ const Faq = () => {
 
           {/* Accordion Item */}
           <div className="collapse collapse-plus border border-black-main rounded-[30px] font-poppins sm:p-8 p-4 bg-white-main has-[:checked]:bg-brand-light has-[:checked]:border-brand-main">
-            <input type="radio" name="my-accordion-3" className="peer" />
+            <input
+              type="radio"
+              name="my-accordion-3"
+              className="peer"
+              aria-label="FAQ accordion item"
+              id={`faq-2`}
+            />
+            <label htmlFor={`faq-2`} className="sr-only">
+              FAQ accordion control
+            </label>
             <div className="collapse-title text-xl sm:text-2xl font-semibold text-black-main peer-checked:text-brand-main">
               How does GPT enhance the insights in this project?
             </div>
@@ -66,7 +89,16 @@ const Faq = () => {
 
           {/* Accordion Item */}
           <div className="collapse collapse-plus border border-black-main rounded-[30px] font-poppins sm:p-8 p-4 bg-white-main has-[:checked]:bg-brand-light has-[:checked]:border-brand-main">
-            <input type="radio" name="my-accordion-3" className="peer" />
+            <input
+              type="radio"
+              name="my-accordion-3"
+              className="peer"
+              aria-label="FAQ accordion item"
+              id={`faq-3`}
+            />
+            <label htmlFor={`faq-3`} className="sr-only">
+              FAQ accordion control
+            </label>
             <div className="collapse-title text-xl sm:text-2xl font-semibold text-black-main peer-checked:text-brand-main">
               Can this module be expanded for real-world applications?
             </div>

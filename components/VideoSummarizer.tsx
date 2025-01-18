@@ -157,7 +157,9 @@ export default function VideoSummarizer() {
 
             {/* Summary Type Selection */}
             <div className="relative">
+              <label htmlFor="summary-type" className="sr-only">Select summary type</label>
               <select
+                id="summary-type"
                 value={summaryType}
                 onChange={(e) => setSummaryType(e.target.value as SummaryType)}
                 className="block w-full py-3 pl-3 pr-10 text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none"
@@ -227,7 +229,9 @@ export default function VideoSummarizer() {
         {summary && (
           <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex flex-col sm:flex-row gap-4 items-center">
+              <label htmlFor="language-select" className="sr-only">Select language</label>
               <select
+                id="language-select"
                 value={selectedLanguage}
                 onChange={(e) => setSelectedLanguage(e.target.value as Language)}
                 className="w-full sm:w-auto py-2 px-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
