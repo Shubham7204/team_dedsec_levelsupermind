@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { FiYoutube, FiLoader, FiAlertCircle, FiChevronDown, FiCheckCircle } from 'react-icons/fi';
 import ReactMarkdown from 'react-markdown';
+import ArticleDiscussion from './Home/ArticleDiscussion';
 
 // Types and Interfaces
 type SummaryType = 'general' | 'programming' | 'podcast';
@@ -252,15 +253,20 @@ export default function VideoSummarizer() {
           </div>
         )}
 
-        {/* Summary Result */}
+        {/* Summary Result and Discussion */}
         {summary && (
-          <div className="bg-white rounded-xl shadow-lg">
-            <div className="p-6">
-              <div className="prose max-w-none">
-                <ReactMarkdown>{summary.content}</ReactMarkdown>
+          <>
+            <div className="bg-white rounded-xl shadow-lg">
+              <div className="p-6">
+                <div className="prose max-w-none">
+                  <ReactMarkdown>{summary.content}</ReactMarkdown>
+                </div>
               </div>
             </div>
-          </div>
+            
+            {/* Discussion Component */}
+            <ArticleDiscussion summary={summary.content} />
+          </>
         )}
       </div>
     </div>
