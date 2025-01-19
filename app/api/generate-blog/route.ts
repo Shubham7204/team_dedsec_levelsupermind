@@ -18,7 +18,6 @@ export async function POST(req: NextRequest) {
       throw new Error('GOOGLE_API_KEY is not set in the environment variables')
     }
 
-    // Using Gemini 1.5 Flash (latest version)
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" })
 
     const prompt = `

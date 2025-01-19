@@ -23,7 +23,7 @@ const languages = [
 ];
 
 export default function BlogGenerator() {
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState<File | null>(null);
   const [blogContent, setBlogContent] = useState('');
   const [translatedContent, setTranslatedContent] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('hi');
@@ -31,7 +31,7 @@ export default function BlogGenerator() {
   const [error, setError] = useState('');
   const [activeTab, setActiveTab] = useState('edit');
 
-  const handleFileChange = (e) => {
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
       setFile(e.target.files[0]);
     }
