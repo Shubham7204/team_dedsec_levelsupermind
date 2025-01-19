@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import ComponentWrapper from "../ComponentWrapper";
 import Link from "next/link";
-import { CgMediaPodcast } from "react-icons/cg"; // Importing the podcast icon from react-icons
+import { CgMediaPodcast } from "react-icons/cg";
 import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross1 } from "react-icons/rx";
 
@@ -10,17 +10,18 @@ const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const links = [
-    { name: "Pricing", url: "#pricing" },
-    { name: "Services", url: "#services" },
-    { name: "Resources", url: "#resources" },
-    { name: "Blog", url: "#blog" },
-    { name: "Chat", url: "https://socialflow.streamlit.app/", target: "_blank", rel: "noopener noreferrer" },  ];
+    { name: "Blogs", url: "/blogs" },
+    { name: "Upload Video", url: "/upload" },
+    { name: "Text Transcribe", url: "/transcribe" },
+    { name: "Youtube Translate", url: "/youtube" }
+  ];
+
   const toggleDrawer = () => setDrawerOpen(!drawerOpen);
 
   return (
     <ComponentWrapper style="sm:h-[100px] h-[80px] bg-transparent w-full z-50">
       <div className="size-full flex items-center justify-between">
-        {/* Logo (using the CgMediaPodcast icon) */}
+        {/* Logo */}
         <Link href={"/"} className="flex items-center text-white-main text-3xl sm:text-4xl font-semibold">
           <CgMediaPodcast className="text-white-main mr-2" />
           SocialFlow
@@ -46,17 +47,19 @@ const Navbar = () => {
           onClick={toggleDrawer}
           className="md:hidden flex items-center justify-center text-white-main drawer-button"
         >
-          <BiMenuAltRight className=" text-2xl flex-shrink-0" />
+          <BiMenuAltRight className="text-2xl flex-shrink-0" />
         </button>
       </div>
 
       {/* Drawer */}
+      <label htmlFor="my-drawer-4" className="sr-only">Navigation drawer toggle</label>
       <input
         id="my-drawer-4"
         type="checkbox"
         className="drawer-toggle"
         checked={drawerOpen}
         readOnly
+        aria-label="Toggle navigation menu"
       />
       <div className="drawer-side h-[100dvh] z-50">
         <label
@@ -69,7 +72,7 @@ const Navbar = () => {
             <RxCross1
               onClick={toggleDrawer}
               className="text-black-main text-2xl flex-shrink-0"
-            />{" "}
+            />
           </span>
           {links.map((item, index) => (
             <li key={index}>

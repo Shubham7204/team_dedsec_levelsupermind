@@ -34,11 +34,11 @@ const Hero = () => {
           audiences.
         </p>
         <div className="w-full flex items-center justify-center gap-5">
-          <GetStartedBtnYellow 
+          {/* <GetStartedBtnYellow 
             text="Chat Now"
             href="https://socialflow.streamlit.app/"
             icon={<SiStreamlit className="text-xl" />}
-          />
+          /> */}
           <GetStartedBtnYellow 
             text="Chat Now"
             href="https://team-dedsec-levelsupermind.vercel.app/chat"

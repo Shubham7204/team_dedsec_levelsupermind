@@ -26,14 +26,11 @@ const Faq = () => {
               FAQ accordion control
             </label>
             <div className="collapse-title text-xl sm:text-2xl font-semibold text-black-main peer-checked:text-brand-main">
-              What is Langflow, and how is it used in this project?
+              What is the purpose of the blog dashboard in this project, and how does it work?
             </div>
             <div className="collapse-content">
               <p className="text-base sm:text-lg font-normal text-black-main">
-                Langflow is a low-code workflow builder for AI-powered
-                applications. In this project, it facilitates the creation of an
-                analytics workflow, integrating GPT for insights and DataStax
-                Astra DB for database operations.
+                The blog dashboard enables users to input text and video content, transcribe and translate it into 10 regional languages, and publish SEO-optimized blogs.
               </p>
             </div>
           </div>
@@ -51,14 +48,11 @@ const Faq = () => {
               FAQ accordion control
             </label>
             <div className="collapse-title text-xl sm:text-2xl font-semibold text-black-main peer-checked:text-brand-main">
-              How does DataStax Astra DB support this project?
+              How does the project handle video content for transcription and translation?
             </div>
             <div className="collapse-content">
               <p className="text-base sm:text-lg font-normal text-black-main">
-                DataStax Astra DB is used to store and manage the social media
-                engagement data. It allows efficient querying of the dataset for
-                analyzing metrics like likes, shares, and comments across
-                different post types.
+                Video content is automatically transcribed into English using AI-powered speech-to-text models and then translated into multiple languages for blog publishing.
               </p>
             </div>
           </div>
@@ -80,9 +74,7 @@ const Faq = () => {
             </div>
             <div className="collapse-content">
               <p className="text-base sm:text-lg font-normal text-black-main">
-                GPT is integrated to process the analyzed data and generate
-                actionable insights, such as highlighting engagement trends
-                across different post types (e.g., reels, carousels).
+                GPT helps generate actionable insights and performance trends from blog content, guiding content optimization for better audience engagement.
               </p>
             </div>
           </div>
@@ -104,9 +96,7 @@ const Faq = () => {
             </div>
             <div className="collapse-content">
               <p className="text-base sm:text-lg font-normal text-black-main">
-                Yes, the module can be scaled to analyze real-world data by
-                connecting to APIs for social media platforms and leveraging
-                larger datasets in Astra DB.
+                Yes, the module can easily be scaled to support additional languages and various content formats, making it applicable for diverse industries.
               </p>
             </div>
           </div>
