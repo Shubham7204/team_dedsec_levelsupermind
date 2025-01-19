@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
       throw new Error('GOOGLE_API_KEY is not set in the environment variables')
     }
 
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" })
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" })
 
     const prompt = `
     # Comprehensive Prompt for Generating Comprehensive Tutorial Blog from YouTube Subtitles
